@@ -1,5 +1,8 @@
 FINAL HANDIN
 
+Tetris (Fall 2019). Created version of game Tetris with user keyboard input, shape generation interaction, and line clearing 
+capabilities that update the board graphically and logically. Includes game over capabilities. Java. 	
+
 Overview: My project contains these 6 classes that I created/were created for me already and they interact in the following ways:
   - App instantiates PaneOrganizer, my top level object. 
   - PaneOrganizer, my top level class and instantiates my game class, Tetris. This is also where I set my background, 
