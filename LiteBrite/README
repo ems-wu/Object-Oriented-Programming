@@ -1,0 +1,23 @@
+LiteBrite README
+
+FINAL HANDIN
+
+Overview: There are four classes total: App, ColorPalette, LiteBox, and
+LiteBrite. I created the LiteBrite class myself. The LiteBrite class contains
+the LiteBox and ColorPalette classes.
+
+Answers and Design:
+1. LiteBox is associated with ColorPalette. ColorPalette is passed into
+LiteBox as a parameter, so LiteBox knows of ColorPalette.
+
+2. One getter method I used was getcolor(), which I used in ColorPalette to
+get the color so that the corresponding lite peg would be able to set the color.
+The getColor method, located in the ColorPalette class, would get it's
+current Color. By calling the accesor method, LiteBox can get the current color.
+
+One setter method I used in my program was also in ColorPalette. I set the
+color so that the initialized color variable could be set to whatever new color
+that I, the user, clicked on.
+
+Known Bugs:
+None

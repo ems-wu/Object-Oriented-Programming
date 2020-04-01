@@ -1,0 +1,31 @@
+FINAL HANDIN
+
+Overview: My project contains these 6 classes that I created/were created for me already and they interact in the following ways:
+  - App instantiates PaneOrganizer, my top level object. 
+  - PaneOrganizer, my top level class and instantiates my game class, Tetris. This is also where I set my background, 
+  - My Tetris class is my game class, where I set up my timeline, keyboard input for the tetris piece, create my board array,
+  and create various methods such as clearLines(), moveValidity(), endGame(), etc.
+  - TetrisSquares is where I create my composite shape for the tetris square. I also create several helper 
+  methods such as changeColor(), etc, that I utilize in my Tetris class. 
+  - Piece class is where I create my _1dArray and create a square for each index. I also have a generatePiece() method
+  that randomly creates a piece through a switch statement, a move() method that moves the tetris piece down depending on the
+  offset put in, a rotate method that rotates the piece 90 degrees, and a getter method for my _1dArray.
+  - Constants is where I define the constants that I use in Tetris.
+  
+ 
+Design Choices:
+- Sushi background! I just love sushi a lot and I believe that it would make other people happy too seeing the background
+	while playing Tetris. The border is also transparent as to full show the background.
+ - I decided to store the locations of each piece in 2d arrays and then randomize the generation of the platforms through
+ a switch statement in my piece class. I also decided to create a changeColor() method that randomizes the colors
+ based on a set of pre-chosen colors that I thought matched the background. 
+ - My KeyHandler, TimeHandler, and timeline are all in my Game class
+ - Instead of creating a drop() method, I decided to just speed up the timeline so that it would actually look like
+ the pieces were dropping instead of them suddenly appearing at the bottom of the board. 
+ -Instead of creating a separate rotationalValidity method, I decided to store the new x and y locations into an array
+ and implement rotational validity within my rotate method in my Piece class. 
+ - I implement my moveValidity within the cases of my key input switch statement in the Tetris class. 
+ 
+ Major bugs:
+ -I made a mistake in the beginning and accidently made Constants.NUM_ROWS equal to the number of columns and vice versa. Because of 
+ this, the indexes for my arrays are switched around. However, I keep this constant throughout the game and the code still works.

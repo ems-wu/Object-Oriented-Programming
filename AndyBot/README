@@ -1,0 +1,11 @@
+README AndyBot
+
+HANDIN: Final HANDIN
+
+DESIGN CHOICES:
+I used "nesting" by nesting the getHint method as an argument
+into the solveRoadBlock method so that the hint is passed onto solveRoadBlock
+when calling that method. 
+
+KNOWN BUGS:
+No known bugs.

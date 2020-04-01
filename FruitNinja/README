@@ -1,0 +1,27 @@
+FINAL HANDIN
+
+Overview: My project contains 10 classes. These interact in the following ways:
+  - App instantializes FruitNinja, my top level object.
+  - FruitNinja is my top level class and is a subclass of CS15Game
+  Here, I start my game, create an instance of blade, and create my
+  switch statement. My switch state allows me to "launch" a random object of
+  type choppable in the air. I also override method onBladeContact to get
+  a score for my game.
+  - FruitNinjaFrame is a class already created for me and I just called
+  addGame() onto it and passed in fruitninja to make the frame appear.
+  - Fruit is a subclass of CS15Fruit and a superclass of the individual fruits.
+  It inherits from CS15Fruit and is an example of polymorphism as it
+  has access to all of CS15Fruit's methods
+  - Bomb is a subclass of CS15Bomb and inherits all the capabilities from
+  the parent class, showing an example of polymorphism
+  - Lemon is a subclass of Fruit and inherits all methods from Fruit
+  - Apple is a subclass of Fruit and inherits all methods from Fruit
+  - Peach is a subclass of Fruit and inherits all methods from Fruit
+  - Pear is a subclass of Fruit and inherits all methods from Fruit
+  - Bomb is a subclass of Bomb and inherits all methods from CS15 Bomb
+
+Design Choices:
+  -I decided to set my switch statement random int range up to 5
+  and made apples my default.
+  -My fruits each return a different score, with my Apple returning 1,
+  Lemon returning 2, Peach returning 3, and Pear returning 4.

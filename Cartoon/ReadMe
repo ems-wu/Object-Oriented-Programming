@@ -1,0 +1,23 @@
+FINAL HANDIN
+
+Overview: My project contains these 4 classes that I created and they interact in the following ways:
+  - App instantiates PaneOrganizer, my top level object. 
+  - PaneOrganizer, my top level class and is responsible for some of the graphic elements,
+  but mostly delegates user input and animation to Cartoon and Ironman classes. This is where I instantiate my
+  cartoon class. I also instantiate my root Pane and provide a public getRoot() method to return the Pane. 
+  - Cartoon class is where I set my timeline and create my label update. I instantiate my Ironman class here. 
+  Cartoon is the top level object for my shapes and event handlers. 
+  - Ironman is where I create my composite shape (the ironman head).
+
+  
+  In regards to my containment diagram, my App is the top box and contains PaneOrganizer and Scene. PaneOrganizer 
+  contains Label and Button. Button is associated with ClickHandler. Scene is associated with Borderpane, which is 
+  contained inside PaneOrganizer. All my shapes(Rectangle, Polygon, etc) inherit from the class Shape, which inherits 
+  from Node. 
+ 
+Design Choices:
+  -I decided to create a floating Ironman head because Ironman is my favorite character
+  from the Marvel Universe and really represents me in a lot of ways, from his inability to
+  communicate like a normal human being, to his unconventional work habits. 
+  -The design label changes from "Iron Go!" to "Where did he go!" after the head passes the 
+  800 mark on the y coordinate plane. 

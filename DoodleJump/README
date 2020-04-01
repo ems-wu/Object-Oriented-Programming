@@ -1,0 +1,29 @@
+FINAL HANDIN
+
+Overview: My project contains these 6 classes that I created/were created for me already and they interact in the following ways:
+  - App instantiates PaneOrganizer, my top level object. 
+  - PaneOrganizer, my top level class and is responsible for most of the graphic elements,
+  but mostly delegates user input and game design to my Game class. This is where I instantiate my
+  DoodleJump class. I also create my quit button here.
+  - My DoodleJump class is my game class, where I set up my timeline, keyboard input for the doodle, and instantiate my Array List.
+  I also create several essential methods such as generatePlatforms(), removePlatforms(), and scrollingPLatforms(),
+  which are essential to the "movement" of doodle as it jumps from platform to platform up the screen. For my keyboard input,
+  I also create the boundaries for the doodle so that it cannot go off the sides of the screen.
+  - Doodle is where I create my composite shape for the doodle(a green rectangle).I also create several helper 
+  methods such as updateVelocity(), bounce(), etc, that I utilize in my DoodleJump class. 
+  - Platform is where I create my composite shape for the platforms(a brown rectangle).I also create getter methods that get the location 
+  of the platform. Furthermore, I created a helper method, setLocation(), that sets the x and y location of the rectangle. 
+  - Constants is where I define the constants that I use in Doodle Jump.
+  
+ 
+Design Choices:
+ -I decided to put all my key input and timeline into the game class. I also chose to instantiate my ArrayList there,
+  which is how i was able to loop through the array list of platforms and then use the randomInt method that I defined
+  in order to randomize the new location of the platform. 
+ - For my keyboard input, I decided to create an if statement that created boundaries for the x location of doodle and would 
+ halt keyboard input for the relating side whenever doodle would hit the wall.
+ -Within my timeline, I called the generatePlatform(), removePlatforms(), and scrollPlatforms() methods while also updated the 
+ velocity and position of my doodle. Then I chose to create an if statement updating the label, and stopping the timeline and keyboard input
+ when doodle falls off the screen. 
+ -I have individual classes for my doodle and platform. In those classes, I create getter methods so I can get the x and y position 
+ of the instances of platform and doodle.
